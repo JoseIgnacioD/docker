@@ -22,7 +22,7 @@ Make sure your Bamboo server is running and has remote agents support enabled. T
 1. Go to **Administration > Agents**.
 2. Start the Bamboo Agent container:
 
-		docker run -v bambooAgentVolume:/home/bamboo/bamboo-agent-home --name="bambooAgent" --init -d atlassian/bamboo-agent-base BAMBOO_SERVER_URL
+		docker run -v bambooAgentVolume:/home/bamboo/bamboo-agent-home --name="bambooAgent" --init -d "imageID" BAMBOO_SERVER_URL
 
 	where `BAMBOO_SERVER_URL` is the base URL of your Bamboo server. Note that the `--init` flag is required to properly reap zombie processes.
 	
