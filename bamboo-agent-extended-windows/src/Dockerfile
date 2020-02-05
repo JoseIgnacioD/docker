@@ -1,4 +1,4 @@
-FROM "YOUR_REPO"/docker-bamboo-windows-agent-base:6.7.1-1
+FROM "YOUR_REPO"/"base_agent_image"
 
 #Install all packages needed for the agents
 RUN choco install -y git
