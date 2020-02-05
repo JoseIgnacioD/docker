@@ -8,4 +8,4 @@ If you are looking for **Bamboo Server Docker Image** it can be found [here](htt
 
 # Overview
 
-This Docker image extends the docker-bamboo-windows-agent-base. Adds all features, executables and programs needed to run builds.
+This Docker image extends the docker-bamboo-windows-agent-base. Adds some features, executables and programs needed to run builds.

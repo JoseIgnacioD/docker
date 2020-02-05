@@ -27,6 +27,15 @@ RUN choco install dotcover-cli --version 2019.1 -y
 
 RUN choco install nodejs --version 12.7.0 -y
 
+ENV TOOLS_FOLDER=c:\\tools
+ENV SCRIPTS_FOLDER=$TOOLS_FOLDER\\powershellScripts
+
+#Copy and execute all powershell scripts
+WORKDIR $SCRIPTS_FOLDER
+
+COPY install_msbuild.ps1 $SCRIPTS_FOLDER\\install_msbuild.ps1
+RUN .\install_msbuild.ps1
+
 RUN refreshenv
 
 WORKDIR $BAMBOO_USER_HOME
