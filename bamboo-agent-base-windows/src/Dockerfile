@@ -1,5 +1,4 @@
 FROM mcr.microsoft.com/windows/servercore:1607-amd64
-MAINTAINER Jose Ignacio Durand
 
 ENV BAMBOO_VERSION=6.7.1
 ENV DOWNLOAD_URL=https://packages.atlassian.com/maven-closedsource-local/com/atlassian/bamboo/atlassian-bamboo-agent-installer/$BAMBOO_VERSION/atlassian-bamboo-agent-installer-$BAMBOO_VERSION.jar
